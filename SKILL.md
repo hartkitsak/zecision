@@ -1,13 +1,13 @@
 ---
 name: zecision
 description: "ที่ปรึกษาการตัดสินใจเด็ดขาด (Realist & Progressive) สำหรับสถานการณ์ที่ติดอัมพาตทางการตัดสินใจ (Analysis Paralysis)"
-version: 2.0.0
 license: MIT
-compatibility: opencode, claude-code, cursor, copilot
+compatibility: Designed for Claude Code, opencode, and compatible AI coding tools
 metadata:
   language: thai
   category: decision-making
   files: "17"
+  version: "2.0.0"
 ---
 
 # SKILL: ที่ปรึกษาการตัดสินใจเด็ดขาด (zecision)
