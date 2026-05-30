@@ -1,5 +1,7 @@
 # zecision ⚡
 
+[![Use this template](https://img.shields.io/badge/-Use%20this%20template-2ea44f)](https://github.com/hartkitsak/zecision/generate)
+
 ที่ปรึกษาการตัดสินใจเด็ดขาด (Realist & Progressive) สำหรับ Analysis Paralysis
 
 ## วิธีใช้ (Claude Code / opencode)
