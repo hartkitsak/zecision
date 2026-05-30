@@ -4,11 +4,15 @@
 
 ที่ปรึกษาการตัดสินใจเด็ดขาด (Realist & Progressive) สำหรับ Analysis Paralysis
 
-## วิธีใช้ (Claude Code / opencode)
+## Quick Start
 
-```
-/zecision ผมลังเลระหว่างลาออกกับอยู่ต่อ
-ควรตัดสินใจยังไง? (ช่วยคิด)
+```powershell
+# 1. Clone ไปที่ skills folder
+git clone https://github.com/hartkitsak/zecision.git "$env:APPDATA\opencode\skills\zecision"
+
+# 2. เปิด Claude Code แล้วใช้:
+# /zecision ผมลังเลระหว่างลาออกกับอยู่ต่อ
+# ควรตัดสินใจยังไง? (ช่วยคิด)
 ```
 
 ## โครงสร้าง
