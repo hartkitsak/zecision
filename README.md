@@ -1,30 +1,61 @@
 # zecision ⚡
 
-[![Use this template](https://img.shields.io/badge/-Use%20this%20template-2ea44f)](https://github.com/hartkitsak/zecision/generate)
+**ที่ปรึกษาการตัดสินใจเด็ดขาด** สำหรับคนที่ติด Analysis Paralysis — วิเคราะห์ 5 มิติ, แยก Type 1 vs Type 2, ชี้ขาด + Action Step ภายใน 24-48 ชม.
 
-ที่ปรึกษาการตัดสินใจเด็ดขาด (Realist & Progressive) สำหรับ Analysis Paralysis
+## Features
 
-## Quick Start
+- 🎯 6 หลักการ — พูดความจริง, เฉียบขาด, ลงมือได้จริง, วิเคราะห์ 5 มิติ, Cost of Inaction, Energy Budget
+- 🧠 วิเคราะห์ 5 มิติ — จิตวิทยา, ตรรกะ, ธุรกิจ/ชีวิต, ปรัชญา, อารมณ์
+- 🔀 แยก Type 1 (คิดหนัก) vs Type 2 (ลงมือทันที)
+- 💰 Energy Budget Calculator — ประเมินว่าควรใช้สมองคิดเรื่องนี้แค่ไหน
+- 🪞 Extreme Perspectives — มุมมองพลิกกรอบ + สัจธรรม
+- ⏱️ Action Step — Deadline 24-48 ชม., วัดผลได้, ไม่ใช่ "หาข้อมูลเพิ่ม"
+
+## Installation
 
 ```powershell
-# 1. Clone ไปที่ skills folder
-git clone https://github.com/hartkitsak/zecision.git "$env:APPDATA\opencode\skills\zecision"
-
-# 2. เปิด Claude Code แล้วใช้:
-# /zecision ผมลังเลระหว่างลาออกกับอยู่ต่อ
-# ควรตัดสินใจยังไง? (ช่วยคิด)
+git clone https://github.com/hartkitsak/zecision.git "$HOME\.config\opencode\skills\zecision"
 ```
 
-## โครงสร้าง
+## Usage
 
 ```
-├── SKILL.md              ← Entry point (อ่านอัตโนมัติ)
-├── workflow/workflow.md  ← 6 Step agent workflow
-├── scripts/              ← Socratic questions, perspective shifts
-├── template/             ← Response template, 5-D analysis
-├── tools/                ← Decision tree, energy budget
-└── types/               ← Type 1 vs Type 2
+/zecision ผมลังเลระหว่างลาออกกับอยู่ต่อ ที่เดิม toxic แต่เงินดี ควรตัดสินใจยังไง? (ช่วยคิด)
 ```
+
+> ใช้ "(ช่วยคิด)" ต่อท้ายเพื่อ activate skill
+
+## Structure
+
+```
+zecision/
+├── SKILL.md                    ← Entry point (อ่านอัตโนมัติ)
+├── workflow/workflow.md        ← 6 Step + language & tone + flowchart
+├── scripts/
+│   ├── socratic-questions.md   ← คลังคำถามกระตุ้นคิด
+│   └── perspective-shifts.md   ← มุมมองพลิกกรอบ + สัจธรรม
+├── template/
+│   ├── response.md             ← เทมเพลตตอบ 5 ส่วน
+│   └── analysis.md             ← 5-D analysis framework
+├── tools/
+│   ├── decision-tree.md        ← Decision Tree classifier
+│   └── energy-budget.md        ← Energy Budget Calculator
+├── types/
+│   └── decision-types.md       ← Type 1 vs Type 1.5 vs Type 2
+└── reference/
+    ├── cognitive-biases.md     ← 14 biases + mitigation
+    └── decision-frameworks.md  ← 8 frameworks
+```
+
+## Example
+
+**User**: "ลังเลจะลาออกกับอยู่ต่อ ที่เดิม toxic แต่เงินดี (ช่วยคิด)"
+
+**Agent จะ**: ฟัง → เช็ค bias → classify Type 1 → วิเคราะห์ 5 มิติ → เสนอมุมมองพลิกกรอบ/สัจธรรม → ชี้ขาด + Action Step
+
+## Requirements
+
+- [Claude Code](https://claude.ai) หรือ [opencode](https://opencode.ai)
 
 ## License
 
